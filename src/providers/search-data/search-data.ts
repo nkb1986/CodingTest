@@ -15,7 +15,7 @@ export class SearchDataProvider {
 
       // Set up variables. Not a huge worry with CORS on a native app, but
       // proxy settings have been set up for mobile browser testing.
-      var url = 'https://api.shop.com/sites/v1/search/term/{term}'.replace(/{term}/g, encodeURIComponent(searchTerm));
+      var url = '../sites/v1/search/term/{term}'.replace(/{term}/g, encodeURIComponent(searchTerm));
       var params = '?' +  encodeURIComponent('page') + '=' + encodeURIComponent('1')+ '&' +  encodeURIComponent('count') 
         + '=' + encodeURIComponent('100')+ '&' +  encodeURIComponent('apikey') + '=' + encodeURIComponent('l7xx8a07cdc674a24b48b8a8edaf8a905797');
 

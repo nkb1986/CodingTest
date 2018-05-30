@@ -19,7 +19,7 @@ export class ProductInfoProvider {
     // Format the URL and parameters. In a native app we don't have to
     // worry so much about CORS -- under development I inserted proxy
     // information so that it would load on a mobile browser.
-    var url = 'https://api.shop.com/stores/v1/products/{prodID}'.replace(/{prodID}/, encodeURIComponent(prodId));
+    var url = '../stores/v1/products/{prodID}'.replace(/{prodID}/, encodeURIComponent(prodId));
     var params = '?' +  encodeURIComponent('allperms') + '=' + encodeURIComponent('false')+ '&' 
       +  encodeURIComponent('apikey') + '=' + encodeURIComponent('l7xx8a07cdc674a24b48b8a8edaf8a905797');
 
