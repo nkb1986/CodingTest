@@ -1,0 +1,106 @@
+page-product-details {
+
+    #image_container {
+
+        width: 50%;
+        height: auto;
+        float: left;
+
+
+    }
+
+    #product_image {
+        width: 350px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text_title {
+        
+        width: 50%;
+        height: auto;
+        float: right;
+        text-align: center;
+    }
+
+  
+
+    #description_title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #store_row {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    #sold_by {
+        float: left;
+        font-size: 1em;
+        font-style: italic;
+      
+    }
+
+    #store_logo {
+        width: 150px;
+        height: auto;
+        float: right;
+    }
+
+    ion-title {
+        display:inline-block;
+        vertical-align: middle;
+    }
+
+    #footer_image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    #nav_logo {
+        display: block;
+        float:center;
+        margin-left: auto;
+        margin-right: auto;
+          
+    
+    }
+
+    #nav_title {
+        display:block;
+        float: left;
+        
+    }
+
+    .toolbar-background {
+        background-color: #14213D;
+        color: white;
+    }
+
+    ion-footer {
+        position: fixed;
+        background-color: #FCA311;
+        opacity: 50%;
+    }
+
+    ion-toolbar {
+        text-align: center;
+    }
+
+    .toolbar-title.toolbar-title-md, 
+.toolbar-title.toolbar-title-ios, 
+.toolbar-title.toolbar-title-wp { color: white}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: white;
+}
+
+
+
+}

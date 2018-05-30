@@ -1,0 +1,48 @@
+// Search results CSS styling
+
+page-search-results {
+
+    #list_thumbnail {
+        width: 100px; 
+        height: auto;
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+
+    #list_title {
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+        word-wrap: normal;
+    }
+
+    #list_on_sale {
+        font-weight: bold;
+        color: red !important;
+    }
+
+    .toolbar-background {
+        background-color: #14213D;
+        color: white;
+    }
+
+    ion-footer {
+        position: fixed;
+        background-color: #FCA311;
+        opacity: 50%;
+    }
+
+    ion-toolbar {
+        text-align: center;
+    }
+
+    .toolbar-title.toolbar-title-md, 
+.toolbar-title.toolbar-title-ios, 
+.toolbar-title.toolbar-title-wp { color: white}
+
+ion-header ion-icon.back-button-icon.icon {
+    color: white;
+}
+   
+}

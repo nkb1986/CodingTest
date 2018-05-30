@@ -1,14 +1,31 @@
+
+<!-- Header -->
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      SHOP.com Search
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<!-- Body -->
+<ion-content padding no-bounce>
+  <div id="face_logo">
+    <img src="assets/imgs/myface.jpeg" />
+  </div>
+
+  <p id="testimonial"><b>“For myself I am an optimist — it does not seem to be much use being anything else.”</b> - Winston Churchill</p>
+
+  <ion-item>
+    <!-- Search Bar -->
+    <ion-input id="search_bar" [(ngModel)]="searchText" (keyup.enter)="searchTerm()" placeholder="Enter search term"></ion-input>
+  </ion-item>
+
+  <!-- Buttons -->
+  <button class="search_button" ion-button round (click)="searchTerm()">Search Now!</button>
+  <button class="search_button" ion-button round (click)="openWebSite()">Visit Shop.com (Opens Browser)</button>
+
+  
+
+  
 </ion-content>

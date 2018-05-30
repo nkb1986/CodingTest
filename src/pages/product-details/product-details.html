@@ -1,0 +1,46 @@
+<!-- Header -->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <p id="nav_title">Product Details</p>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Body -->
+<ion-content padding>
+
+  <!-- Top Detail Row -->
+  <div id="row">
+    <div id="image_container">
+      <img id = "product_image" src="{{ details.productUrl }}" />
+    </div>
+    <p class="text_title" style="font-weight: bold;">{{ details.productCaption }}</p>
+    <p class="text_title" style="font-size: 2em;">${{ details.productPrice }} </p>
+    <p class="text_title" *ngIf="details.isOnSale == true" style="color: red;">ON SALE!</p>
+     
+  </div>
+
+  <!-- Store Detail Row -->
+  <div id="store_row">
+      <p class="text_title" id="sold_by">Sold by {{ details.productSoldBy }} </p>
+      <img id="store_logo" src="{{ details.soldByLogo }}" />
+  </div>
+
+  <!-- Description Row -->
+  <div id="row">
+    <p id="description_title">Description</p>
+    <p id="description" [innerHtml]="details.productDescription"></p>
+  </div>
+  
+  <!-- Footer -->
+  <ion-footer>
+    <ion-toolbar transparent>
+      <div id="footer_image">
+        <img src="{{details.soldByLogo}}" id="nav_logo" />
+      </div>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>

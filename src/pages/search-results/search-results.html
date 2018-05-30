@@ -1,0 +1,35 @@
+<!-- Header -->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Results for {{ searchTerm }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- Body -->
+<ion-content padding>
+  <!-- Only show if there were results returned -->
+  <ion-list *ngIf="results?.length > 0">
+    <ion-item *ngFor="let item of results" text-wrap (click)="itemClick(item)">
+      <div id="list_item">
+          <img src="{{item.imageURI}}" id="list_thumbnail" />
+          <p id="list_title">{{item.caption}}</p>
+          <p id="list_price">{{ item.priceInfo.price }} </p>
+          <p id="list_on_sale" *ngIf = "item.onSaleSpecial == true" >ON SALE!</p><br />
+          <p id="list_sold_by">Sold by {{ item.catalogName }} </p>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <!-- Show if no results were found -->
+  <ion-content *ngIf="results?.length == 0">
+    <p>No results found!</p>
+  </ion-content>
+
+  <!-- Footer -->
+  <ion-footer>
+    <ion-toolbar transparent>
+     Coding Test - Nathan Brooman
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
